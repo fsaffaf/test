@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Falak Saffaf - Academic CV</title>
+
+<style>
+:root{
+  --bg:#0b1220;
+  --card:#111827;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#38bdf8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,#0b1220,#0f172a);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:30px 20px 80px;
+}
+
+/* HEADER */
+header{
+  background:var(--card);
+  padding:28px;
+  border-radius:14px;
+  margin-bottom:18px;
+}
+
+h1{
+  font-size:2.2rem;
+}
+
+.subtitle{
+  color:var(--accent);
+  margin-top:6px;
+}
+
+.contact{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* NAV */
+nav{
+  position:sticky;
+  top:0;
+  background:#0b1220cc;
+  backdrop-filter: blur(8px);
+  padding:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+  border-bottom:1px solid #1f2937;
+  z-index:10;
+}
+
+nav a{
+  color:var(--accent);
+  text-decoration:none;
+  font-size:0.9rem;
+}
+
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* SECTIONS */
+section{
+  background:var(--card);
+  padding:22px;
+  border-radius:14px;
+  margin:16px 0;
+}
+
+h2{
+  color:var(--accent);
+  margin-bottom:14px;
+  border-left:3px solid var(--accent);
+  padding-left:10px;
+}
+
+.item{
+  margin-bottom:14px;
+}
+
+h3{
+  font-size:1.05rem;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:0.9rem;
+}
+
+ul{
+  padding-left:18px;
+  margin-top:6px;
+}
+
+a{
+  color:var(--accent);
+}
+
+footer{
+  text-align:center;
+  color:var(--muted);
+  margin-top:40px;
+  font-size:0.85rem;
+}
+
+/* PRINT */
+@media print{
+  nav{display:none;}
+  body{background:white;color:black;}
+  section, header{break-inside:avoid;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <h1>Falak Saffaf</h1>
+  <div class="subtitle">Ph.D. Experimental Psychology</div>
+  <div class="contact">
+    Pronouns: she/her/hers ·
+    Cell: (xxx) xxx-xxxxx
+    Email: xxxxxxxxxx
+    <a href="https://www.researchgate.net/profile/Falak_Saffaf">ResearchGate</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#education">Education</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#presentations">Presentations</a>
+  <a href="#dei">DEI</a>
+  <a href="#service">Service</a>
+  <a href="#awards">Awards</a>
+</nav>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+
+<div class="item">
+<h3>Ph.D., Experimental Psychology</h3>
+<div class="meta">2018–2020 · Saint Louis University</div>
+<ul>
+<li>Social Psychology (Primary)</li>
+<li>Quantitative Methods (Secondary)</li>
+<li>Research Methodology Minor</li>
+</ul>
+</div>
+
+<div class="item">
+<h3>M.S., Experimental Psychology</h3>
+<div class="meta">2015–2018 · Saint Louis University</div>
+<ul>
+<li>Social Psychology</li>
+<li>Quantitative Methods</li>
+</ul>
+</div>
+
+<div class="item">
+<h3>B.A., Psychology</h3>
+<div class="meta">2011–2015 · Saint Louis University</div>
+<ul>
+<li>Anthropology Minor</li>
+<li>Magna Cum Laude</li>
+</ul>
+</div>
+</section>
+
+<!-- TEACHING -->
+<section id="teaching">
+<h2>Teaching Experience</h2>
+
+<div class="item"><h3>Applied Analytics and Research Methods</h3><div class="meta">Instructor | 2023–Present</div></div>
+<div class="item"><h3>Ethical Evidence-Based Decision Making</h3><div class="meta">Instructor | 2023–Present</div></div>
+
+<div class="item"><h3>General Psychology</h3><div class="meta">Instructor (2019–2023); TA (2017)</div></div>
+<div class="item"><h3>Social Psychology</h3><div class="meta">Instructor (2022–2023); TA (2015–2016)</div></div>
+<div class="item"><h3>Research Methods & Statistics Courses</h3><div class="meta">Instructor & TA roles (2015–2019)</div></div>
+
+<div class="item"><h3>Advanced Research Methods & Statistics</h3><div class="meta">Instructor (2018); TA (2016)</div></div>
+<div class="item"><h3>Psychology of Oppression</h3><div class="meta">TA (2016–2018)</div></div>
+<div class="item"><h3>Psychology of Close Relationships</h3><div class="meta">TA (2017)</div></div>
+<div class="item"><h3>Disciplines & Practices in Psychology</h3><div class="meta">TA (2016)</div></div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+<h2>Research Experience</h2>
+
+<div class="item">
+<ul>
+<li>Neosexism in the Workplace (2025)</li>
+<li>Arab & African American Attitudes (2020)</li>
+<li>Immigration Policy & Latinx Americans (2019)</li>
+<li>Muslim American Identity & Health Outcomes (2018)</li>
+<li>Identity Measurement & Social Psychology Projects (2013–2017)</li>
+</ul>
+</div>
+
+<div class="item">
+<h3>Undergraduate Research Mentoring</h3>
+<ul>
+<li>Supervised multiple experimental capstone projects (2018–2019)</li>
+<li>Topics included distraction, prosocial behavior, cognition, and social psychology</li>
+</ul>
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+<h2>Publications</h2>
+
+<ul>
+<li>Grawitch, Lavigne, & Saffaf (2025). Neosexism and decision-making. Researchers.One.</li>
+<li>Saffaf (2020). Dissertation. Saint Louis University.</li>
+<li>Summers & Saffaf (2019). Journal of Cognition and Culture.</li>
+<li>Saffaf (2018). Master’s Thesis.</li>
+<li>Harvey & Saffaf (2018). SAGE Encyclopedia chapter.</li>
+<li>Harvey & Saffaf (2015). PsycCRITIQUES review.</li>
+</ul>
+</section>
+
+<!-- PRESENTATIONS -->
+<section id="presentations">
+<h2>Presentations & Invited Talks</h2>
+
+<div class="item">
+<h3>Invited Lectures</h3>
+<ul>
+<li>DEI Consulting (UMSL, SLU, Psi Chi, 2022)</li>
+<li>Research Methods & Statistics lectures (2018–2019)</li>
+<li>MCAT Prep & Psychology lectures (2015–2017)</li>
+</ul>
+</div>
+
+<div class="item">
+<h3>Conference Presentations</h3>
+<ul>
+<li>SPSSI (2019)</li>
+<li>Midwestern Psychological Association (2017–2018)</li>
+<li>Sigma Xi Symposium (2015–2019)</li>
+</ul>
+</div>
+</section>
+
+<!-- DEI -->
+<section id="dei">
+<h2>DEI Consulting & Facilitation</h2>
+
+<div class="item">
+<h3>DEI Consultant</h3>
+<div class="meta">2021–Present · R&K Harvey Consulting</div>
+</div>
+
+<div class="item">
+<h3>Oppression Simulation Workshop Leader</h3>
+<div class="meta">2016–Present</div>
+</div>
+</section>
+
+<!-- SERVICE -->
+<section id="service">
+<h2>University Service</h2>
+
+<ul>
+<li>Diversity Chair (2024–2026)</li>
+<li>Faculty Senate Representative (2025–2027)</li>
+<li>Graduate Lab Manager (2017–2020)</li>
+<li>GSA Representative (2017–2020)</li>
+<li>Program Committee Member (2017–2019)</li>
+</ul>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+<h2>Awards & Honors</h2>
+
+<ul>
+<li>Teacher of the Year (2026)</li>
+<li>Napoli Teaching Award (2020)</li>
+<li>Sigma Xi 1st Place Poster (2019)</li>
+<li>Distinguished Thesis Award (2019)</li>
+<li>Collins & Psi Chi Awards (2015)</li>
+</ul>
+</section>
+
+<footer>
+© 2026 Falak Saffaf · Academic CV
+</footer>
+
+</div>
+
+</body>
+</html>
