@@ -1,15 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - CV</title>
 
-    <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #0b1220, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: white;
+    }
+
+    .subtitle {
+      color: var(--accent);
+      margin-top: 5px;
+    }
+
+    .contact {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .item {
+      margin-bottom: 15px;
+    }
+
+    .item h3 {
+      font-size: 1.05rem;
+      color: white;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 18px;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 30px;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
-<body>
-    <h1>Website</h1>
 
-    <div class="snow"></div>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Your Full Name</h1>
+      <div class="subtitle">Software Engineer | Data Analyst | Web Developer</div>
+      <div class="contact">
+        Email: youremail@example.com ·
+        GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a> ·
+        LinkedIn: <a href="#">linkedin.com/in/yourprofile</a>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+      <h2>Profile</h2>
+      <p>
+        Write a concise professional summary here. Focus on your skills, experience,
+        and what kind of roles you are targeting.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="item">
+        <h3>Job Title – Company Name</h3>
+        <div class="meta">Jan 2023 – Present · Location</div>
+        <ul>
+          <li>Describe achievement or responsibility #1</li>
+          <li>Describe achievement or responsibility #2</li>
+          <li>Use measurable impact where possible</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Previous Role – Company Name</h3>
+        <div class="meta">Jun 2021 – Dec 2022 · Location</div>
+        <ul>
+          <li>Key contribution or project</li>
+          <li>Technical stack used or outcome</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+
+      <div class="item">
+        <h3>Degree Name – University Name</h3>
+        <div class="meta">2018 – 2022</div>
+        <ul>
+          <li>Relevant coursework or achievements</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+
+      <div class="grid">
+        <div>
+          <strong>Programming</strong>
+          <ul>
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Tools & Tech</strong>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>React / Node.js</li>
+            <li>SQL / MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+
+      <div class="item">
+        <h3>Project Name</h3>
+        <ul>
+          <li>Short description of the project</li>
+          <li><a href="#">GitHub Link</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Another Project</h3>
+        <ul>
+          <li>Description and technologies used</li>
+          <li><a href="#">Live Demo</a> · <a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Your Name · Built with HTML & GitHub Pages
+    </footer>
+
+  </div>
 </body>
 </html>
